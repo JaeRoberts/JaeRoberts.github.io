@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio | Jordyn Roberts</title>
-
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Typography-->
+  <link rel="stylesheet" href="https://use.typekit.net/gbt3uov.css">
+  <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav aria-label="main navigation">
-      <img src="/images/hero/JR-Logo-Black.png" alt="logo" width="52" height="52">
-      <ul>
-        <li>projects.</li>
-        <li><a href="project.html">temp link to case study</a></li>
-        <li>about.</li>
-        <li>resume.</li>
-        <li>contact.</li>
+    <header class="header">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="logo">
+        <img src="/images/hero/JR-Logo-Black.png" alt="logo">
+      </div>
+        <ul class="top-nav">
+          <div class="main-links">
+          <li class="nav-link"><a href="index.html">projects<span class="link-period">.</span></a></li>
+          <li class="nav-link"><a href="project.html">temp link to ark<span>.</span></a></li>
+          <li class="nav-link">about<span class="link-period">.</span></li>
+          <li class="nav-link">resume<span class="link-period">.</span></li>
+          <li class="nav-link"><a href="mailto:jae.roberts.d@gmail.com">contact<span class="link-period">.</span></a></li>
+        </div>
         </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <main>
-    <div>
-      <!--hero unit -->
-      <section title="What’s Designed For Humanity Should Exhibit Humanity.">
-        <h1>What’s Designed For Humanity Should Exhibit Humanity.</h1>
-        <p>Hi, I’m Jordyn Roberts – a UX designer based in Atlanta, GA. I enjoy creating experiential digital solutions that help people live their best lives.</p>
-        <button type="button">VIEW PEOJECTS</button>
-      </section>
-      <!--other sections below -->
-      <section title="Ark">
-        <article>
-          <div>
-            <img src="/images/hero/ark-preview.png" alt="ark preview" width="555" height="334">
-          </div>
-          <div>
-            <div>
-              <h2>Ark</h2>
-              <p>UX DESIGN &#124; UX RESEARCH &#124; SASS</p>
-              <p>A conceptual interactive prototype for people wanting to store, share, and create content from single, secure platform.</p>
-              <button type="button">VIEW CASE STUDY</button>
+    <main class="main">
+        <!--hero unit -->
+        <div class="hero-banner1">
+        <div class="container">
+        <section class="hero1" title="What’s Designed For Humanity Should Exhibit Humanity.">
+          <article class="hero-copy">
+            <h1>What’s Designed For <strong class="bold-pink">Humanity</strong> Should <u>Exhibit</u> Humanity.</h1>
+            <div class="subtitle">
+            <h4> Hi, I’m Jordyn Roberts – a UX designer based in Atlanta, GA. <br>
+            I enjoy creating experiences that help people live their best lives.</h4>
             </div>
+          <button class="button-style-1" type="button"><span class="button-text">CHECK OUT MY WORK</span>
+            <img class="button-arrow-1" src="/images/components/arrow-white-down.png" alt="arrow pointing down" width="32" height="518"></button>
+        </article>
+        </section>
+      </div>
     </div>
-</article>
-    </section>
-    </div>
-  </main>
-  <footer>
-    <h2>Like What you see? Let's Discuss!</h2>
-    <div>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/jordynroberts/">linkedin.</a></li>
-        <li><a href="https://dribbble.com/JordynRoberts">dribble.</a></li>
-        <li><a href="mailto:jae.roberts.d@gmail.com">email.</a></li>
-      </ul>
-    </div>
-  </footer>
+        <!--other sections below -->
+        <div class="container">
+        <section class="projects" title="projects">
+          <article class="project1" title="project1">
+            <div class="project1-img" title="project1-img">
+              <img src="/images/hero/ark-preview.png" alt="ark preview" width="555" height="334">
+            </div>
+              <div class="project1-summary" title="project1-summary">
+                <p class="featured-project">Featured Project</p>
+                <h2>ARK</h2>
+                <p class="content-label">UX DESIGN &#124; UX RESEARCH &#124; SAAS</p>
+                <p class="project-description">A conceptual interactive prototype for people wanting to store, share, and create content from single, secure platform.</p>
+                <button class="button-style-2" type="button"><span class="button-text">VIEW CASE STUDY</span>
+                  <img class="button-arrow-2" src="/images/components/arrow-black-right.png" alt="arrow">
+                </button>
+              </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+      <h3>Like What you see? Let's Discuss!</h3>
+      <div>
+        <ul>
+          <li class="footer-link"><a href="https://www.linkedin.com/in/jordynroberts/">linkedin.</a></li>
+          <li class="footer-link"><a href="https://dribbble.com/JordynRoberts">dribble.</a></li>
+          <li class="footer-link"><a href="mailto:jae.roberts.d@gmail.com">email.</a></li>
+        </ul>
+      </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
