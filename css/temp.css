@@ -158,3 +158,29 @@ grid-template-columns: 80%;
 #current-page {
   font-weight: 700;
 }
+
+
+
+
+.top-nav {
+  padding: 0 4rem;
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    float: right;
+    justify-content: flex-end;
+    margin: 0;
+    width: auto;
+
+  }

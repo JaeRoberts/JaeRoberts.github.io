@@ -200,7 +200,7 @@ a:hover {
 
 .header {
   background-color: #F1F1F1;
-  background-image: url("/images/hero/hero-bg-light.png");
+  background-image: url("/images/hero/hero-bg-dark.jpg");
   background-position: right;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -226,9 +226,12 @@ a:hover {
 .main-nav {
   list-style-type: none;
   display: none;
+  margin: 7rem 0;
+  width: 100%;
 }
 
 .nav-links {
+  color: #fff;
  display: inline-block;
  margin: 0 1rem;
 }
@@ -238,14 +241,24 @@ a:hover {
 }
 
 .main-nav li {
-  text-align: center;
-  margin: 15px auto;
+  text-align: left;
+  margin: 2.4rem auto;
+
 }
 
 .logo {
   display:inline-block;
   max-width: 32px;
   max-height: auto;
+}
+
+.main-logo {
+  display: none;
+}
+
+.mobile-logo {
+  margin-left: 1rem;
+
 }
 
 .navbar-toggle {
@@ -274,7 +287,7 @@ a:hover {
 }
 
 #responsive-menu {
-  color: #343434;
+  color: #fff;
   display: inline-block;
   margin: 0 1rem;
   margin: 15px auto;
@@ -360,8 +373,83 @@ footer div h3 {
   padding: 5rem 0;
 }
 
+@media screen and (min-width: 36rem) {
+
+  /*Header*/
+
+  .header {
+    background-color: #F1F1F1;
+    background-image: url("/images/hero/hero-bg-light.png");
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #343434;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .top-nav {
+    padding: 0 4rem;
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    }
+
+    #chkToggle:checked + ul.main-nav {
+      display: flex;
+    }
+
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      float: right;
+      justify-content: flex-end;
+      margin: 0;
+      width: auto;
+    }
 
 
+
+    .main-nav li {
+
+    }
+
+    .nav-links {
+      margin-left: 40px;
+      color: #343434;
+
+    }
+
+
+    .logo {
+      margin-top: 0;
+    }
+
+    .mobile-logo {
+      display: none;
+    }
+
+    .main-logo {
+      display: block;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+
+    .nav-links:hover {
+      color: #FA255E;
+    }
+
+}
 
 
 
@@ -403,45 +491,6 @@ footer div h3 {
     text-transform: capitalize;
   }
 
-  /*Header*/
-  .top-nav {
-    padding: 0 4rem;
-    align-items: center;
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    }
-
-    #chkToggle:checked + ul.main-nav {
-      display: flex;
-    }
-
-    .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-
-    .main-nav li {
-      margin: 0;
-    }
-
-    .nav-links {
-      margin-left: 40px;
-    }
-
-    .logo {
-      margin-top: 0;
-    }
-
-    .navbar-toggle {
-      display: none;
-    }
-
-    .nav-links:hover {
-      color: #FA255E;
-    }
 
 
 
