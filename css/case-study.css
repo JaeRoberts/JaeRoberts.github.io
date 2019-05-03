@@ -400,9 +400,10 @@ img {
   color: #343434;
   position: fixed;
   padding: 2rem 0;
-  position: fixed;
+  position: fixed ;
   top: 0;
   width: 100%;
+  z-index: 99;
   /* -webkit-box-shadow: 0px 8px 13px -13px rgba(0,0,0,0.23);
   -moz-box-shadow: 0px 8px 13px -13px rgba(0,0,0,0.23);
   box-shadow: 0px 8px 13px -13px rgba(0,0,0,0.23); */
@@ -452,6 +453,9 @@ nav ul li {
   color: #FA255E;
 }
 
+#current-page {
+  font-weight: 700;
+}
 
 /* Hero */
 
@@ -590,7 +594,7 @@ nav ul li {
 
 .overview-content {
   display: flex;
-  flex-flow: row;
+  flex-flow: wrap;
   justify-content: space-between;
   padding-top: 5.6rem;
 }
@@ -711,12 +715,14 @@ nav ul li {
 }
 
 #persona1-img {
+
   background-image: url("/images/ark-case-study/personas/persona1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 40rem;
   overflow: hidden;
+  position: relative;
 }
 
 #persona2-card-top {
@@ -731,10 +737,10 @@ nav ul li {
   background-image: url("/images/ark-case-study/personas/persona2.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   min-height: 40rem;
   overflow: hidden;
-  position:
+  position: relative;
 
 }
 
@@ -753,27 +759,34 @@ nav ul li {
   background-position: center;
   min-height: 40rem;
   overflow: hidden;
+  position: relative;
 }
 
 .persona-text{
+  text-shadow: 2px 8px 8px 2px rgba(0,0,0,0.5);
   display: inline;
   color: #fff;
+  position: absolute;
+  top:170px;
 
 }
 
 .persona-name {
-font-size: 6.4rem;
+font-size: 5.8rem;
 font-weight: 700;
 line-height: 6.4rem;
-padding-left: 2.4rem;
-
+text-align: center;
 }
 
 .persona-role {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 3rem;
-  padding-right: 2.4rem;
+  padding-left: 1.6rem;
+  padding-right:1.6rem;
+  padding-top:2.4rem;
+  text-align: center;
+
 }
 
 .demographics {
@@ -1254,7 +1267,67 @@ footer div h4 {
 
   }
 
+/*Personas*/
 
+#persona1-img {
+
+  background-image: url("/images/ark-case-study/personas/persona1-tablet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+
+#persona2-img {
+  background-image: url("/images/ark-case-study/personas/persona2-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: 40rem;
+  overflow: hidden;
+  position: relative;
+
+}
+
+#persona3-img {
+  background-image: url("/images/ark-case-study/personas/persona3-tablet.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.persona-text{
+  text-shadow: 2px 8px 8px 2px rgba(0,0,0,0.5);
+  display: inline;
+  color: #fff;
+  position: absolute;
+  top:190px;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.persona-name {
+font-size: 5.8rem;
+font-weight: 700;
+line-height: 5.8rem;
+
+
+}
+
+.persona-role {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3rem;
+  padding-top:2.4rem;
+
+}
 
 }
 
@@ -1316,18 +1389,27 @@ footer div h4 {
     background-position: center;
   }
 
+  .persona-text{
+    text-shadow: 2px 8px 8px 2px rgba(0,0,0,0.5);
+    display: inline;
+    color: #fff;
+    position: absolute;
+    top:190px;
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+  }
+
   .persona-name {
   font-size: 4.8rem;
   font-weight: 700;
-  padding-left: 2.4rem;
   }
 
   .persona-role {
-    text-align: right;
     font-size: 2.4rem;
     font-weight: 400;
     line-height: 3rem;
-    padding-right: 2.4rem;
+    padding-top: 2.4rem;
   }
 
   /*Wireframes*/
