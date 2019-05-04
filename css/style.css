@@ -1,17 +1,18 @@
-/* Structure */
+
 * {
   box-sizing: border-box;
 }
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #F7F7F7;
   display: grid;
   grid-template-areas:
-    "header"
+    "cd-auto-hide-header"
     "main"
     "footer";
 }
@@ -22,11 +23,58 @@ img {
 }
 
 .container {
-  /* display: flex;
-  flex-flow: row wrap; */
+
   margin: 0 10%;
   width: 80%;
 }
+
+/******Header*********/
+.cd-auto-hide-header {
+  background-attachment: fixed;
+  background-color: #f1f1f1;
+  background-image: url("/images/ark-case-study/case-study-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  color: #343434;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.logo {
+  display: inline-block;
+  max-height: auto;
+  max-width: 3.2rem;
+}
+
+.main-nav li {
+  color: #343434;
+  font-family: roboto, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.nav-links {
+  color: #343434;
+}
+
+
+.link-period {
+  color: #FA255E;
+}
+
+.nav-links:hover {
+  color: #FA255E;
+}
+
+
+
 
 /* Typography */
 
@@ -41,9 +89,6 @@ u {
   text-decoration-style: solid;
 }
 
-p, h1, h2, h4, .content-label, .project-description, .subtitle {
-
-}
 
 p {
   font-family: lato, sans-serif;
@@ -136,6 +181,8 @@ a:hover {
 
 /*Components*/
 
+
+
 .button-style-1 {
   background-image: linear-gradient(to right, #F77268 , #FA255E);
   border: 0px;
@@ -149,7 +196,9 @@ a:hover {
   padding-left: 1.8rem;
   padding-right: 1rem;
   text-transform: uppercase;
+  transition: 0.5s;
   width: auto;
+  white-space: nowrap;
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 14px -12px rgba(0,0,0,1);
   box-shadow: 0px 0px 14px -12px rgba(0,0,0,1);
@@ -169,7 +218,10 @@ a:hover {
   padding-left: 1.8rem;
   padding-right: 1rem;
   text-transform: uppercase;
+  transition: 0.5s;
   width: auto;
+  white-space: nowrap;
+
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 0px 14px -12px rgba(0,0,0,0.4);
   box-shadow: 0px 0px 14px -12px rgba(0,0,0,0.4);
@@ -196,6 +248,11 @@ a:hover {
 
 }
 
+button:active {
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.1);
+}
+
+
 /*Header*/
 
 .header {
@@ -206,13 +263,11 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   color: #343434;
-  position: fixed;
-  top: 0;
-  width: 100%;
   padding: 2rem 0;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 .top-nav {
@@ -223,28 +278,14 @@ a:hover {
   justify-content: space-between;
 }
 
-.main-nav {
-  list-style-type: none;
-  display: none;
-  margin: 7rem 0;
-  width: 100%;
-}
+
 
 .nav-links {
-  color: #fff;
- display: inline-block;
- margin: 0 1rem;
-}
-
-.nav-links:last-child {
- margin-right: 0;
-}
-
-.main-nav li {
-  text-align: left;
-  margin: 2.4rem auto;
+color: #fff;
 
 }
+
+
 
 .logo {
   display:inline-block;
@@ -278,25 +319,7 @@ a:hover {
   font-weight: 700;
 }
 
-#chkToggle {
-  display: none;
-}
 
-#chkToggle:checked + ul.main-nav {
-  display: block;
-}
-
-#responsive-menu {
-  color: #fff;
-  display: inline-block;
-  margin: 0 1rem;
-  margin: 15px auto;
-  text-decoration: none;
-
-}
-#responsive-menu:hover {
-  color: #FA255E;
-}
 
 
 
@@ -328,8 +351,6 @@ a:hover {
   padding-bottom: 2.4rem;
   text-transform: uppercase;
 }
-
-
 
 .project-description {
   padding-bottom: 4rem;
@@ -379,15 +400,11 @@ footer div h3 {
 
   .header {
     background-color: #F1F1F1;
-    background-image: url("/images/hero/hero-bg-light.png");
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color: #343434;
-    position: fixed;
-    top: 0;
-    width: 100%;
     padding: 2rem 0;
     position: fixed;
     top: 0;
@@ -402,28 +419,13 @@ footer div h3 {
     justify-content: space-between;
     }
 
-    #chkToggle:checked + ul.main-nav {
-      display: flex;
-    }
 
-    .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      float: right;
-      justify-content: flex-end;
-      margin: 0;
-      width: auto;
-    }
+.align-left {
+  width: 100%;
+}
 
-
-
-    .main-nav li {
-
-    }
 
     .nav-links {
-      margin-left: 40px;
       color: #343434;
 
     }

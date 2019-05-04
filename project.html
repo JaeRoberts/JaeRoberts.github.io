@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Jordyn Roberts</title>
+  <title> Jordyn Roberts | Design with humanity in mind.</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation.css">
   <link rel="stylesheet" type="text/css" href="css/case-study.css">
   <!--Typography-->
   <link rel="stylesheet" href="https://use.typekit.net/gbt3uov.css">
-  <link rel="stylesheet" href="css/uikit.min.css" />
-  <script src="js/uikit.min.js"></script>
-  <script src="js/uikit-icons.min.js"></script>
-  <!-- Material Design Lite
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  -->
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar" aria-label="main navigation">
-      <div class="logo">
-        <img src="/images/hero/JR-Logo-Black.png" alt="logo">
-      </div>
-      <ul class="top-nav">
-        <div class="main-links">
-          <li class="nav-link"><a href="index.html">projects<span class="link-period">.</span></a></li>
-          <li class="nav-link" id="current-page">temp link to ark<span>.</span></li>
-          <li class="nav-link">about<span class="link-period">.</span></li>
-          <li class="nav-link"><a href="https://www.dropbox.com/s/eqkxh62wyqp7jqw/Jordyn-Roberts-Resume.pdf?dl=0">resume<span class="link-period">.</span></a></li>
-          <li class="nav-link"><a href="mailto:jae.roberts.d@gmail.com">contact<span class="link-period">.</span></a></li>
-        </div>
-      </ul>
-    </nav>
-  </header>
+  <header class="cd-auto-hide-header">
+	<div class="logo"><a href="#0"><img src="/images/hero/JR-Logo-Black.png" alt="logo"></a></div>
+
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+
+		<ul class="main-nav" id="cd-navigation">
+			<li>
+				<a href="index.html" class="nav-links">projects<span class="link-period">.</span></a>
+			</li>
+
+			<li>
+				<a href="#" class="nav-links">about<span class="link-period">.</span></a>
+			</li>
+			<li>
+				<a href="https://www.dropbox.com/s/eqkxh62wyqp7jqw/Jordyn-Roberts-Resume.pdf?dl=0" class="nav-links">resume<span class="link-period">.</span></a>
+			</li>
+			<li>
+				<a href="mailto:jae.roberts.d@gmail.com" class="nav-links">contact<span class="link-period">.</span></a>
+			</li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+
+
   <main class="main">
     <!--hero unit -->
+		<div class-"intro-content">
+
     <div class="hero-banner">
       <section class="hero" title="Ark">
         <article class="hero-content">
@@ -47,7 +57,7 @@
               private-encryption, heightened password security,
               and content monitoring.</p>
             <div class="hero-buttons">
-              <button class="button-style-1" type="button"><span class="button-text">VIEW CASE STUDY</span> <img class="button-arrow-1" src="/images/components/arrow-white-down.png" alt="arrow pointing down" width="32" height="518"></button>
+              <a href="#overview"><button class="button-style-1" type="button"><span class="button-text">VIEW CASE STUDY</span> <img class="button-arrow-1" src="/images/components/arrow-white-down.png" alt="arrow pointing down" width="32" height="518"></button></a>
               <button class="button-style-2" type="button"><span class="button-text">VIEW HI-FI PROTOTYPE</span><img class="button-arrow-2" src="/images/components/arrow-black-right.png" alt="arrow"></button>
             </div>
           </div>
@@ -58,91 +68,13 @@
         </article>
       </section>
     </div>
-    <!--sub navigtion -->
-    <div>
-      <div class="uk-inline">
-        <a class="main-anchor" href="#overview">overview.</a>
-        <a class="main-anchor" href="#problem-solution">problem &#38; solution.</a>
-        <button type="button">Test</button>
-        <div uk-dropdown>
-          <ul class="uk-nav uk-dropdown-nav">
-            <li class="process-anchor"><a href="#competitive-analysis">competitive analysis.</a></li>
-            <li class="process-anchor"><a href="#user-survey">user survey.</a></li>
-            <li class="process-anchor"><a href="#user-persona">user personas.</a></li>
-            <li class="process-anchor"><a href="#user-stories">user stories.</a></li>
-            <li class="process-anchor"><a href="#user-flows">user flows.</a></li>
-            <li class="process-anchor"><a href="#wireframes">wireframes.</a></li>
-            <li class="process-anchor"><a href="#usability-test-i">usability test i.</a></li>
-            <li class="process-anchor"><a href="#branding-work">branding work.</a></li>
-            <li class="process-anchor"><a href="#mockups">mockups.</a></li>
-            <li class="process-anchor"><a href="#applying-feedback">applying feedback.</a></li>
-            <li class="process-anchor"><a href="#prototypes">prototypes.</a></li>
-            <li class="process-anchor"><a href="#usability-test-ii">usability test ii.</a></li>
-          </ul>
-        </div>
-      </div>
-      <a class="main-anchor" href="#conclusion">conclusion.</a>
-    </div>
 
-
-    <!--
-    <div class="subnavbar">
-      <a class="subnav-link" href="#overview">overview.</a>
-      <a class="subnav-link" href="#problem-solution">problem &#38; solution.</a>
-  <div class="subnav">
-<button class="subnavbtn"><p>process.</p></button>
-    <div class="subnav-content">
-      <ul>
-      <li class="subnav-link"><a href="#competitive-analysis">competitive analysis.</a></li>
-      <li class="subnav-link"><a href="#user-survey">user survey.</a></li>
-      <li class="subnav-link"><a href="#user-persona">user personas.</a></li>
-      <li class="subnav-link"><a href="#user-stories">user stories.</a></li>
-      <li class="subnav-link"><a href="#user-flows">user flows.</a></li>
-      <li class="subnav-link"><a href="#wireframes">wireframes.</a></li>
-      <li class="subnav-link"><a href="#usability-test-i">usability test i.</a></li>
-      <li class="subnav-link"><a href="#branding-work">branding work.</a></li>
-      <li class="subnav-link"><a href="#mockups">mockups.</a></li>
-      <li class="subnav-link"><a href="#applying-feedback">applying feedback.</a></li>
-      <li class="subnav-link"><a href="#prototypes">prototypes.</a></li>
-      <li class="subnav-link"><a href="#usability-test-ii">usability test ii.</a></li>
-    </ul>
-    </div>
-
-  </div>
-</div>
-
--->
-
-
-    <!--Subnav 1
-          <ul class="subnav-links">
-            <li class="subnav-link">overview.</li>
-            <li class="subnav-link">problem &#38; solution.</li>
-            <li class="subnav-link">&#124;</li>
-            <li class="subnav-link">competitive analysis.</li>
-            <li class="subnav-link">user survey.</li>
-            <li class="subnav-link">user personas.</li>
-            <li class="subnav-link">user stories.</li>
-            <li class="subnav-link">user flows.</li>
-            <li class="subnav-link">wireframes.</li>
-            <li class="subnav-link">usability test i.</li>
-            <li class="subnav-link">branding work.</li>
-            <li class="subnav-link">mockups.</li>
-            <li class="subnav-link">applying feedback.</li>
-            <li class="subnav-link">prototypes.</li>
-            <li class="subnav-link">usability test ii.</li>
-            <li class="subnav-link">&#124;</li>
-            <li class="subnav-link">conclusion.</li>
-          </ul>
-          Subnav 1-->
-    </div>
-    </div>
-    </div>
     <!--overview start-->
 
     <section class="overview" title="overview">
+      <a name="overview"></a>
+
       <div class="container">
-        <a name="overview"></a>
         <article>
           <p class="content-label">OVERVIEW.</p>
           <p> As more individuals and businesses become reliant on cloud storage providers to store their content, the risk of doing so increases with the lack of essential cybersecurity features on even the most popular cloud storage services. In
@@ -154,7 +86,7 @@
           <div class="overview-column-1">
             <div>
               <h6>Roles</h6>
-              <ul class="overflow-items">
+              <ul class="overview-items">
                 <li class="list-item">
                   <p>UX Designer</p>
                 </li>
@@ -171,7 +103,7 @@
             </div>
             <div>
               <h6>Team</h6>
-              <ul class="overflow-items">
+              <ul class="overview-items">
                 <li class="list-item">
                   <p>Jordyn Roberts (myself)</p>
                 </li>
@@ -180,7 +112,7 @@
           </div>
           <div class="overview-column-2">
             <h6>Deliverables</h6>
-            <ul class="overflow-items">
+            <ul class="overview-items">
               <li class="list-item">
                 <p>Competitive Analysis</p>
               </li>
@@ -221,7 +153,7 @@
           </div>
           <div class="overview-column-3">
             <h6>Tools</h6>
-            <ul class="overflow-items">
+            <ul class="overview-items">
               <li class="list-item">
                 <p>Sketchbook</p>
               </li>
@@ -277,22 +209,34 @@
           </div>
         </article>
       </div>
-      <div>
-        <img src="/images/ark-case-study/ark-screenshots.png">
-      </div>
+			<img src="/images/ark-case-study/ark-screenshots.png">
+
     </section>
     <!--problem and solution end -->
+	</div>
     <!--process start -->
+		<!--Subnav start-->
+		<nav class="cd-secondary-nav">
+	<ul>
+		<li><a class="nav-links" href="#strategy">strategy<span class="link-period">.</span></a></li>
+		<li><a class="nav-links" href="#information-architecture">information architecture<span class="link-period">.</span></a></li>
+		<li><a class="nav-links" href="#visual-design">visual design<span class="link-period">.</span></a></li>
+		<li><a class="nav-links" href="#additional-testing">additional testing<span class="link-period">.</span></a></li>
+
+	</ul>
+</nav> <!-- .cd-secondary-nav -->
+
+<!--Subnav end-->
 
     <section class="process" title="process">
-      <a name="process"></a>
+      <a name="strategy"></a>
       <article>
-        <div>
-          <div class="container">
-            <p class="content-label">PROCESS.</p>
-          </div>
+
           <!-- Competitive Analysis start-->
           <div class="container">
+
+						<p class="process-label">PROCESS &#62; STRATEGY</p>
+						<br>
             <div class="competitive analysis">
               <h3>Competitive Analysis</h3>
               <div>
@@ -957,9 +901,12 @@
           <!-- Card Collection Slider end-->
           <!-- User Personas end-->
           <!-- User Stories start-->
+					<a name="information-architecture"></a>
           <div class="user stories">
-            <div class="container">
-              <div>
+<div class="container">
+			<br>
+							<p class="process-label">PROCESS &#62; Information Architecture</p>
+<br>
                 <h3>User Stories</h3>
                 <p>User stories were derived from the motivations, goals, and frustrations of the user personas and revealed specific tasks users should be able to complete in the app to meet their needs. After recording them in a spreadsheet, I
                   prioritized them based on importance. This practice helped me keep scope creep at bay throughout the entire process.</p>
@@ -1081,7 +1028,6 @@
           </div>
           <!-- User Flows end-->
           <!-- Wireframes start-->
-          <div>
             <div class="container">
               <div>
                 <h3>Wireframes</h3>
@@ -1092,44 +1038,51 @@
               <div>
                 <p id="wireframe-flow">SHARE ITEM & MANAGE PERMISSIONS</p>
               </div>
-            </div>
-            <div class="container">
+
               <div class="sketch"><img src="/images/ark-case-study/wireframe/wireframe-sketch.jpg" alt="wireframe sketch">
                 <p class="caption">These are the wireframe thumbnails I sketched up for sharing an item and managing permissions.</p>
               </div>
-              <p class="single-line">The user flow for sharing an item and managing permissions would go as follows:</p>
 
+              <p>The user flow for sharing an item and managing permissions would go as follows:</p>
+
+<br>
+</div>
+
+<!--Gallery Start-->
+
+
+<!--Gallery End-->
+<div class="gallery-container">
               <div class="gallery">
-                <div><img class="wireframe-img" id="Wireframe-1" src="/images/ark-case-study/wireframe/wireframe1.png" alt="wireframe step 1">
+                <div class="gallery-column1"><img id="Wireframe-1" src="/images/ark-case-study/wireframe/wireframe1.png" alt="wireframe step 1">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #1</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-2" src="/images/ark-case-study/wireframe/wireframe2.png" alt="wireframe step 2">
+                <div class="gallery-column2"><img  id="Wireframe-2" src="/images/ark-case-study/wireframe/wireframe2.png" alt="wireframe step 2">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #2</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-3" src="/images/ark-case-study/wireframe/wireframe3.png" alt="wireframe step 3">
+                <div class="gallery-column1"><img id="Wireframe-3" src="/images/ark-case-study/wireframe/wireframe3.png" alt="wireframe step 3">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #3</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-4" src="/images/ark-case-study/wireframe/wireframe4.png" alt="wireframe step 4">
+                <div class="gallery-column2"><img  id="Wireframe-4" src="/images/ark-case-study/wireframe/wireframe4.png" alt="wireframe step 4">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #4</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-5" src="/images/ark-case-study/wireframe/wireframe5.png" alt="wireframe step 5">
+                <div class="gallery-column1"><img id="Wireframe-5" src="/images/ark-case-study/wireframe/wireframe5.png" alt="wireframe step 5">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #5</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-6" src="/images/ark-case-study/wireframe/wireframe6.png" alt="wireframe step 6">
+                <div class="gallery-column2"><img  id="Wireframe-6" src="/images/ark-case-study/wireframe/wireframe6.png" alt="wireframe step 6">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #6</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-7" src="/images/ark-case-study/wireframe/wireframe7.png" alt="wireframe step 7">
+                <div class="gallery-column1"><img  id="Wireframe-7" src="/images/ark-case-study/wireframe/wireframe7.png" alt="wireframe step 7">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #7</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-8" src="/images/ark-case-study/wireframe/wireframe8.png" alt="wireframe step 8">
+                <div class="gallery-column2"><img  id="Wireframe-8" src="/images/ark-case-study/wireframe/wireframe8.png" alt="wireframe step 8">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #8</p>
                 </div>
-                <div><img class="wireframe-img" id="Wireframe-9" src="/images/ark-case-study/wireframe/wireframe9.png" alt="wireframe step 9">
+                <div class="gallery-column1"><img  id="Wireframe-9" src="/images/ark-case-study/wireframe/wireframe9.png" alt="wireframe step 9">
                   <p class="gallery-caption">Share an Item & Manage Permissions – STEP #9</p>
                 </div>
-              </div>
-            </div>
-          </div>
+							</div>
+</div>
           <div class="container">
             <div class="button-container">
               <button class="button-style-3" type="button">VIEW WIREFRAMES</button></div>
@@ -1137,40 +1090,47 @@
 
           <!-- Wireframes end-->
           <!-- To Tutorial or Not Tutorial start-->
-          <div class="gray-background">
-            <div class="container">
+          <div class="blue-background">
                 <div class="tutorial">
+									<div class="container">
                   <p>PROCESS HIGHLIGHT</p>
                     <h5>To Tutorial or Not Tutorial?</h5>
                     <p>Before running usability tests on my lo-fi prototype, I pushed it through two sessions of <strong>Bloc's Daily Design Critique (DDC)</strong>. At this point, the prototype had an empty state encouraging the users to upload or
-                      create
-                      a file to get started.</p>
+                      createa file to get started.</p>
 
+</div>
+<div class="gallery-container">
                     <div class="single-img"><img src="/images/ark-case-study/tutorial/dashboard1.png" alt="user flows">
                       <div class="card-paragraph-container">
                         <p class="caption">This is the original wireframe for Ark’s dashboard empty state before receiving feedback to make it more directional.</p>
                       </div>
                     </div>
-
-                    <p>This is the original wireframe for Ark’s dashboard empty state before recieving feedback to make it more diretional.</p>
+									</div>
+									<div class="container">
                     <p>In the first DDC, I was made aware that a user inexperienced with cloud storage interfaces may be in need of a walk-through for their first interaction. With this in mind, I designed more wireframes that welcome users to the
                       app and give them access to a tutorial.</p>
+											<br>
+</div>
 
+<div class="gallery-container">
                     <div class="gallery">
-                      <div class="gallery-first-item"><img src="/images/ark-case-study/tutorial/tutorial1.png" alt="tutorial step 1">
+                      <div class="gallery-column1"><img src="/images/ark-case-study/tutorial/tutorial1.png" alt="tutorial step 1">
                         <p class="caption">In the initial tutorial design, the user would be presented to this screen right after signing up.</p>
                       </div>
-                      <div><img src="/images/ark-case-study/tutorial/tutorial2.png" alt="tutorial step 2">
+                      <div class="gallery-column2"><img src="/images/ark-case-study/tutorial/tutorial2.png" alt="tutorial step 2">
                         <p class="caption">If they decide to begin the tutorial, they would proceed to this screen. This is the first of three screens in the walk-through and presents users with the options they can access in the main navigation.</p>
                       </div>
 
-                      <div><img src="/images/ark-case-study/tutorial/tutorial3.png" alt="tutorial step 3">
+                      <div class="gallery-column1"><img src="/images/ark-case-study/tutorial/tutorial3.png" alt="tutorial step 3">
                         <p class="caption">Here, the user learns about the options available in the sidebar navigation, which allows them to navigate the dashboard. This is the first of three screens in the walk-through.</p>
                       </div>
-                      <div><img src="/images/ark-case-study/tutorial/tutorial4.png" alt="tutorial step 4">
+                      <div class="gallery-column2"><img src="/images/ark-case-study/tutorial/tutorial4.png" alt="tutorial step 4">
                         <p class="caption">Here, the user is made aware of the storage gauge, showing them how much free storage the have available and what storage types are taking up space, as well as how much.</p>
                       </div>
                     </div>
+									</div>
+										<div class="container">
+
                     <p>I then sent the updated prototype to be reviewed for a second time. The reviewer was not the same person, and the tutorial received a response that somewhat contradicted the feedback I embraced earlier. After completing the
                       onboarding process, he was greeted with a welcome screen asking if he would like to proceed to the tutorial.</p>
                     <br>
@@ -1204,9 +1164,15 @@
           </div>
           <!-- Usability Test I end-->
           <!-- Branding Work start-->
-<div class="branding work" title="brandowork">
+<a name="visual-design"></a>
+
+<div class="branding work" title="branding work">
   <div>
+
     <div class="container">
+					<br>
+			<p class="process-label">PROCESS &#62; VISUAL DESIGN</p>
+		</br>
       <h3>Branding Work</h3>
       <p>I revisited the competitive-analysis to determine the best positioning for the brand. My research showed me that positioning my brand as a solution to an ever growing problem in cybersecurity would be the best strategy. </p>
       <br>
@@ -1260,16 +1226,22 @@
 
       <p><strong>Logo Refinements</strong></p>
       <p>Logo concepts were sketched on paper first. Then, I chose what I considered the best design and digitized it in Figma. </p>
-      <div class="single-imgs">
-        <img src="/images/ark-case-study/branding-work/logo-refinements.png" alt="logo refinements" width="668" height="661">
+</div>
+			<div class="single-imgs">
+        <img src="/images/ark-case-study/branding-work/logo-refinements.png" alt="logo refinements" >
         <p class="caption">These are the black and white logos I created for Ark. I used a gradient to help me enivision how color would have an effect on the logo when added.</p>
       </div>
+			<div class="container">
+
       <p><strong>Brand Color</strong></p>
       <p>I assigned blue as the brand’s primary color after doing some research into color psychology. Often associated with trust, responsibility, and security, this was the color that aligned with the personality of the brand best.</p>
-      <div class="single-imgs">
-        <img src="/images/ark-case-study/branding-work/logo-brand-color.png" alt="added brand color" width="670" height="612">
+</div>
+			<div class="single-imgs">
+        <img src="/images/ark-case-study/branding-work/logo-brand-color.png" alt="added brand color" >
         <p class="caption">This is the logo with a potential brand color applied. I would later opt for a flatter design, but the ideas was for the logo to resemble the blue light often associated with cybersecurity.</p>
       </div>
+			<div class="container">
+
       <p><strong>The Right Color Palette</strong></p>
       <p>Choosing a color palette for the brand took contemplation and experimentation. I had a specific look in mind, but what I brewed up in color scheme generators would not suffice. After suffering through enough trial and error, I
         tried
@@ -1277,7 +1249,7 @@
     </div>
 <div id="color-scheme-container">
     <div class="single-imgs">
-      <img src="/images/ark-case-study/branding-work/color-scheme.png" alt="color scheme" width="900" height="369">
+      <img src="/images/ark-case-study/branding-work/color-scheme.png" alt="color scheme" >
       <p class="caption">These are the top three color schemes I created for Ark.</p>
     </div>
   </div>
@@ -1342,7 +1314,7 @@
 </div>
             <!-- Branding Work end-->
             <!-- Updates to Framework start-->
-            <div class="gray-background">
+            <div class="blue-background">
             <div  title="updates to the framework">
               <div class="container">
                 <p>PROCESS HIGHLIGHT</p>
@@ -1476,9 +1448,13 @@
           </div>
           <!-- Mockups end-->
           <!-- Applying Feedback start-->
-          <div>
+						<a name="additional-testing"></a>
           <div title="feedback">
+
             <div class="container">
+									<br>
+							<p class="process-label">PROCESS &#62; ADDITIONAL TESTING</p>
+<br>
               <h3>Applying Feedback</h3>
               <p class="feedback-types">Mentor Suggestion: Replace the hamburger button with the logo</p>
 
@@ -1569,7 +1545,7 @@
           </div>
           <!-- Applying-Feedback end-->
           <!-- Mobile To Desktop start-->
-    <div class="gray-background">
+    <div class="blue-background">
           <div class="mobile" title="Transferring the Mobile Design to Desktop">
               <div class="container">
               <p>PROCESS HIGHLIGHT</p>
@@ -1590,7 +1566,7 @@
 
             </div>
           </div>
-        </div>
+				</div>
           <!-- Mobile To Desktop end-->
           <!-- Applying Feedback con't start-->
           <div class="feedback2" title ="feedback continued">
@@ -1801,7 +1777,11 @@
     </div>
       </div>
   </footer>
-  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 
 </html>
