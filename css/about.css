@@ -420,7 +420,7 @@ button:active {
   .hero-content {
     align-items: center;
     display: grid;
-    grid-column-gap: 1rem;
+    grid-column-gap: 4rem;
     grid-template-areas:
       "about-summary self-portrait";
     grid-template-columns: 8fr 5fr ;
@@ -438,6 +438,7 @@ button:active {
   font-weight: 400;
   line-height: 180%;
   margin-top: 0;
+  max-width: 55rem;
   padding-bottom: 6.4rem;
 }
 
