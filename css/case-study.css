@@ -585,7 +585,12 @@ button:active {
 
 /******Subnav*********/
 .overflow-container {
-  width: 95vw;
+  width: 100%;
+}
+
+@media screen and (min-width: 1000rem) {
+  .overflow-container {
+    overflow: hidden;
 }
 
 /******Process*********/
