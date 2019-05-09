@@ -221,7 +221,7 @@
   position: relative;
   z-index: 1;
   clear: both;
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background-color: #2b2b2b;
   margin-bottom: 6.4rem;
@@ -265,7 +265,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 5%;
+  padding: 0;
+  /*padding: 0 5%; */
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -298,6 +299,8 @@
   line-height: 50px;
   padding: 0 1em;
 }
+
+
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1;
 
