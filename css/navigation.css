@@ -295,8 +295,9 @@
   color: #e7e7e7;
   display: block;
   line-height: 50px;
-  
+  padding: 0 1em;
 }
+
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1;
 
