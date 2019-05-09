@@ -6,7 +6,7 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  
+
 }
 
 body {
@@ -555,6 +555,7 @@ button:active {
   padding-bottom: 7rem;
   padding-top: 5.6rem;
 }
+
 
 .overview-items {
   padding-bottom: 2.4rem;

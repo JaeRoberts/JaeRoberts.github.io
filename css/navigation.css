@@ -223,6 +223,7 @@
   clear: both;
   width: 100%;
   height: 50px;
+  overflow: auto;
   background-color: #2b2b2b;
   margin-bottom: 6.4rem;
   /* Force Hardware Acceleration */
@@ -266,7 +267,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 0 5%;
-  overflow-x: auto;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 .cd-secondary-nav ul::after {
@@ -289,13 +290,12 @@
   padding-right: 20px;
 
 }
-.cd-secondary-nav a {
 
+.cd-secondary-nav a {
   color: #e7e7e7;
   display: block;
-
   line-height: 50px;
-  padding: 0 10%;
+  
 }
 .cd-secondary-nav a:hover, .cd-secondary-nav a.active {
   opacity: 1;
