@@ -628,6 +628,7 @@ button:active {
   border-left: .8rem solid #92C6EF;
   margin-bottom: 5.6rem;
   margin-top: 2.4rem;
+  max-width:661rem;
 }
 
 .result-img {
@@ -875,16 +876,20 @@ button:active {
 
 /******User Stories*********/
 .table-container {
-  margin: 5.6rem 5%;
-  overflow: auto;
-  width: 90%;
+  overflow-x: scroll;
+  margin: 5.6rem 4vw;
+  width: 87vw;
+
+}
+
+table {
 }
 
 @media screen and (min-width: 400px) {
   .table-container {
-    margin: 5.6rem 10%;
+    margin: 5.6rem 20%;
     overflow: auto;
-    width: 80%;
+    width: 60%;
   }
   }
 
@@ -1343,9 +1348,21 @@ button:active {
 }
 
 /******Usability Test II*********/
+
+
 #confirmation-dialog-img {
-  margin-top: 5.6rem;
+  margin: 5.6rem 5%;
   text-align: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 1000px) {
+  #confirmation-dialog-img {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+
 }
 
 #task-container {

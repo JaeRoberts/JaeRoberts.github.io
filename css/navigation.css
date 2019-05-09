@@ -225,6 +225,8 @@
   height: 50px;
   background-color: #2b2b2b;
   margin-bottom: 6.4rem;
+  overflow-y: scroll;
+
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
