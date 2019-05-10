@@ -6,7 +6,6 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-
 }
 
 body {
@@ -25,7 +24,6 @@ body {
 
 @media screen and (min-width: 40rem) {
   .container {
-
     font-weight: 400;
     margin: 0 20%;
     max-width: 60%;
@@ -49,7 +47,7 @@ body {
 }
 
 .gray-background {
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
 }
 
 img {
@@ -130,7 +128,7 @@ em {
 }
 
 u {
-  background: linear-gradient(180deg, rgba(255,255,255,0) 75%, #FFF500 65%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 75%, #FFF500 65%);
   border-bottom: none;
   text-decoration: none;
 }
@@ -143,8 +141,6 @@ br {
   line-height: 5rem;
 }
 
-
-
 li {
   font-family: lato, sans-serif;
   font-size: 1.8rem;
@@ -155,8 +151,6 @@ li {
 ol {
   padding: 1.6rem 0;
 }
-
-
 
 a {
   color: #343434;
@@ -190,7 +184,6 @@ a:hover {
   display: flex;
   display: inline-block;
   padding-right: .8rem;
-
 }
 
 .content-label {
@@ -314,7 +307,6 @@ button:active {
   padding-right: .5rem;
 }
 
-
 .button-style-1 {
   background-image: linear-gradient(to right, #F77268, #FA255E);
   border: 0px;
@@ -329,10 +321,10 @@ button:active {
   height: 48px;
   margin-bottom: 2.4rem;
   margin-right: 1.6rem;
-  padding-bottom:1.5rem;
+  padding-bottom: 1.5rem;
   padding-left: 1.8rem;
   padding-right: 1rem;
-  padding-top:1.5rem;
+  padding-top: 1.5rem;
   text-transform: uppercase;
   transition-duration: 0.5s;
   white-space: nowrap;
@@ -340,7 +332,7 @@ button:active {
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-.button-style-1:hover{
+.button-style-1:hover {
   color: #fff;
 }
 
@@ -357,9 +349,9 @@ button:active {
   font-weight: 500;
   height: 48px;
   margin-bottom: 1.6rem;
-  padding-bottom:1.5rem;
+  padding-bottom: 1.5rem;
   padding-left: 1.8rem;
-  padding-top:1rem;
+  padding-top: 1rem;
   text-transform: uppercase;
   transition-duration: 0.5s;
   white-space: nowrap;
@@ -367,7 +359,7 @@ button:active {
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-.button-style-2:hover{
+.button-style-2:hover {
   color: #343434;
 }
 
@@ -385,9 +377,9 @@ button:active {
   height: 48px;
   margin: 4rem 0;
   padding-bottom: 1.6rem;
-  padding-left:1.8rem;
-  padding-right:1.8rem;
-  padding-top:1.4rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1.4rem;
   text-transform: uppercase;
   transition-duration: 0.5s;
   white-space: nowrap;
@@ -476,7 +468,6 @@ button:active {
   color: #343434;
 }
 
-
 .link-period {
   color: #FA255E;
 }
@@ -484,7 +475,6 @@ button:active {
 .nav-links:hover {
   color: #FA255E;
 }
-
 
 /******Hero*********/
 .hero {
@@ -556,7 +546,6 @@ button:active {
   padding-top: 5.6rem;
 }
 
-
 .overview-items {
   padding-bottom: 2.4rem;
 }
@@ -564,7 +553,7 @@ button:active {
 /******Problem and Solution*********/
 .problem-solution {
   background-color: #f2f2f2;
-  padding-top:7rem;
+  padding-top: 7rem;
 }
 
 #problem-solution {
@@ -577,9 +566,9 @@ button:active {
 
 #ark-screenshots {
   background: url("/images/ark-case-study/ark-screenshots.jpg");
-  height:auto;
+  height: auto;
   width: 100%;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -588,10 +577,7 @@ button:active {
   width: 95vw;
 }
 
-
-
 /******Process*********/
-
 #process {
   padding-top: 6.4rem;
   padding-bottom: 7rem;
@@ -627,8 +613,6 @@ button:active {
 }
 
 /******User Survey*********/
-
-
 .findings {
   margin-bottom: 2.4rem;
 }
@@ -637,7 +621,7 @@ button:active {
   border-left: .8rem solid #92C6EF;
   margin-bottom: 5.6rem;
   margin-top: 2.4rem;
-  max-width:661rem;
+  max-width: 661rem;
 }
 
 .result-img {
@@ -888,11 +872,9 @@ button:active {
   overflow-x: scroll;
   margin: 5.6rem 4vw;
   width: 87vw;
-
 }
 
-table {
-}
+table {}
 
 @media screen and (min-width: 400px) {
   .table-container {
@@ -900,7 +882,7 @@ table {
     overflow: auto;
     width: 60%;
   }
-  }
+}
 
 #user-stories-table {
   border-radius: 15px;
@@ -964,7 +946,6 @@ table {
   padding-top: 2.4rem;
   margin: 0 5%;
   width: 90%;
-
 }
 
 .gallery-first-item {
@@ -972,7 +953,6 @@ table {
 }
 
 @media screen and (min-width: 400px) {
-
   #gallery {
     align-items: center;
     display: flex;
@@ -986,34 +966,26 @@ table {
     padding-top: 2.4rem;
     margin: 0 10%;
     width: 80%;
-
   }
-
 }
 
 @media screen and (min-width: 1000px) {
-
   .gallery {
     display: grid;
     grid-column-gap: 2.4rem;
     grid-template-areas:
       "gallery-column1 gallery-column2";
     grid-template-columns: 1fr 1fr;
-
   }
 
   .gallery-column1 {
     display: inline-block;
-
   }
 
   .gallery-column2 {
     display: inline-block;
-
   }
-
 }
-
 
 /******Branding Work*********/
 #brainstorm-imgs {
@@ -1073,14 +1045,12 @@ table {
 }
 
 @media screen and (min-width: 1000px) {
-
   .single-imgs {
     padding-top: 5.6rem;
     text-align: center;
     margin: 0 10%;
     width: 80%;
   }
-
 }
 
 #logo-imgs {
@@ -1111,12 +1081,10 @@ table {
 }
 
 @media screen and (min-width: 400px) {
-
   #color-scheme-container {
     width: 80%;
     margin: 0 10%;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -1234,10 +1202,7 @@ table {
     padding: 5%;
     transition: 0.3s;
   }
-
 }
-
-
 
 .preference-test-results {
   border-left: .8rem solid #92C6EF;
@@ -1265,18 +1230,16 @@ table {
 }
 
 .mobile-txt-field {
-   width:25rem;
-   height:51.4rem;
-   margin:auto;
+  width: 25rem;
+  height: 51.4rem;
+  margin: auto;
 }
 
 .desktop-txt-field {
- margin-top: 10rem;
+  margin-top: 10rem;
 }
 
-
 @media screen and (min-width: 1000px) {
-
   .mobile-desktop-container {
     display: flex;
     flex-flow: nowrap;
@@ -1285,10 +1248,10 @@ table {
     margin-right: 10%;
     margin-top: 5.6rem;
   }
-  .desktop-txt-field {
-     width:85rem;
-    height:51.4rem;
 
+  .desktop-txt-field {
+    width: 85rem;
+    height: 51.4rem;
   }
 
   .mobile-txt-field {
@@ -1297,7 +1260,6 @@ table {
 }
 
 /******Prototypes*********/
-
 .prototypes {
   display: grid;
   grid-template-areas:
@@ -1310,6 +1272,7 @@ table {
   text-align: center;
   width: 90%;
 }
+
 @media screen and (min-width: 400px) {
   .prototypes {
     display: grid;
@@ -1323,9 +1286,7 @@ table {
     text-align: center;
     width: 80%;
   }
-
 }
-
 
 .wireframe-prototype {
   display: inline-block;
@@ -1357,8 +1318,6 @@ table {
 }
 
 /******Usability Test II*********/
-
-
 #confirmation-dialog-img {
   margin: 5.6rem 5%;
   text-align: center;
@@ -1371,7 +1330,6 @@ table {
     margin-right: 10%;
     width: 80%;
   }
-
 }
 
 #task-container {
@@ -1422,4 +1380,8 @@ footer div h4 {
   font-size: 2.4rem;
   margin-top: 3.2rem;
   text-align: left;
+}
+
+#copyright {
+  line-height: 140%;
 }
