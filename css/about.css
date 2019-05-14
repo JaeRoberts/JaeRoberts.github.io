@@ -40,13 +40,8 @@ body {
 
 .blue-background {
   background-color: #F2F4F7;
-  /* border: .1rem solid #E6ECF4; */
   margin: 7rem 0;
   padding: 7rem 0;
-}
-
-.gray-background {
-  background-color: #F2F2F2;
 }
 
 img {
@@ -93,7 +88,7 @@ h3 {
 
 h4 {
   font-family: droid-serif, serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -198,6 +193,10 @@ a:hover {
 
 @media screen and (min-width: 40rem) {
   h1 {
+    font-size: 5.6rem;
+  }
+
+  h4 {
     font-size: 4.8rem;
   }
 }
@@ -219,7 +218,11 @@ button {
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-button:active {
+.button-style-1:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-style-2:active {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -244,7 +247,7 @@ button:active {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  height: 48px;
+  height: 4.8rem;
   margin-bottom: 2.4rem;
   margin-right: 1.6rem;
   padding-bottom: 1.5rem;
@@ -256,6 +259,12 @@ button:active {
   white-space: nowrap;
   -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+}
+
+.button-arrow-1 {
+  width: 3.2rem;
+  height: auto;
+  vertical-align: middle;
 }
 
 .button-style-1:hover {
@@ -273,7 +282,7 @@ button:active {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  height: 48px;
+  height: 4.8rem;
   margin-bottom: 1.6rem;
   padding-bottom: 1.5rem;
   padding-left: 1.8rem;
@@ -285,45 +294,6 @@ button:active {
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-.button-style-2:hover {
-  color: #343434;
-}
-
-.button-style-3 {
-  background-color: #fff;
-  border: 2px solid #2b2b2b;
-  border-radius: 50px;
-  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  color: #2b2b2b;
-  display: inline-block;
-  font-family: roboto, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  height: 48px;
-  margin: 4rem 0;
-  padding-bottom: 1.6rem;
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
-  padding-top: 1.4rem;
-  text-transform: uppercase;
-  transition-duration: 0.5s;
-  white-space: nowrap;
-  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-}
-
-.button-style-3:hover {
-  background-color: #2b2b2b;
-  color: #fff;
-  transition-duration: 0.4s;
-}
-
-.button-arrow-1 {
-  height: auto;
-  vertical-align: middle;
-}
-
 .button-arrow-2 {
   margin-bottom: .3rem;
   margin-left: .5rem;
@@ -331,6 +301,10 @@ button:active {
   max-height: 26px;
   padding: .2rem 0;
   vertical-align: middle;
+}
+
+.button-style-2:hover {
+  color: #343434;
 }
 
 /******Header*********/
@@ -480,9 +454,9 @@ button:active {
   .about {
     background-color: #F7F7F7;
     display: grid;
-    grid-template-columns: 5fr 2.5fr;
     grid-template-areas:
       "main-container side-container";
+    grid-template-columns: 5fr 2.5fr;
     padding: 7rem 0;
   }
 }

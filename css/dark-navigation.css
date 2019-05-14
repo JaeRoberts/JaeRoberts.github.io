@@ -2,21 +2,21 @@
 1. Auto-Hiding Navigation - Simple
 -------------------------------- */
 .cd-auto-hide-header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
   background-color: #000;
+  left: 0;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   /* Force Hardware Acceleration */
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  will-change: transform;
-  -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: -webkit-transform .5s;
 }
 
 .cd-auto-hide-header::after {
@@ -26,9 +26,9 @@
 }
 
 .cd-auto-hide-header.is-hidden {
+  transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -39,12 +39,12 @@
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
+  bottom: auto;
   position: absolute;
   top: 50%;
-  bottom: auto;
+  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .cd-auto-hide-header .logo {
@@ -57,13 +57,13 @@
 
 .cd-auto-hide-header .nav-trigger {
   /* vertically align its content */
-  color: #f7f7f7;
   border-left: 1px solid #353535;
+  color: #f7f7f7;
   display: table;
-  height: 100%;
   font-family: roboto, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
+  height: 100%;
   padding: 0 1em;
   right: 0;
   text-transform: uppercase;
@@ -77,44 +77,44 @@
 
 .cd-auto-hide-header .nav-trigger em, .cd-auto-hide-header .nav-trigger em::after, .cd-auto-hide-header .nav-trigger em::before {
   /* this is the menu icon */
-  display: block;
-  position: relative;
-  height: 2px;
-  width: 22px;
-  background-color: #f7f7f7;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-color: #f7f7f7;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 22px;
+  -webkit-backface-visibility: hidden;
 }
 
 .cd-auto-hide-header .nav-trigger em {
   /* this is the menu central line */
   margin: 6px auto 14px;
-  -webkit-transition: background-color .2s;
   transition: background-color .2s;
+  -webkit-transition: background-color .2s;
 }
 
 .cd-auto-hide-header .nav-trigger em::before, .cd-auto-hide-header .nav-trigger em::after {
-  position: absolute;
   content: '';
   left: 0;
-  -webkit-transition: -webkit-transform .2s;
+  position: absolute;
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform .2s;
 }
 
 .cd-auto-hide-header .nav-trigger em::before {
   /* this is the menu icon top line */
+  transform: translateY(-6px);
   -webkit-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
 }
 
 .cd-auto-hide-header .nav-trigger em::after {
   /* this is the menu icon bottom line */
+  transform: translateY(6px);
   -webkit-transform: translateY(6px);
   -ms-transform: translateY(6px);
-  transform: translateY(6px);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -130,16 +130,16 @@
 
 .cd-auto-hide-header.nav-open .nav-trigger em::before {
   /* rotate top line */
+  transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 .cd-auto-hide-header.nav-open .nav-trigger em::after {
   /* rotate bottom line */
+  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
 }
 
 .cd-primary-nav {
@@ -150,25 +150,25 @@
 }
 
 .cd-primary-nav>ul {
-  position: absolute;
-  z-index: 2;
-  top: 60px;
-  left: 0;
-  width: 100%;
   background-color: #000;
-  display: none;
   box-shadow: 0 14px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 2;
 }
 
 .cd-primary-nav>ul a {
   /* target primary-nav links */
+  border-top: 1px solid #353535;
+  color: #f7f7f7;
   display: block;
+  font-size: 1.8rem;
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-  color: #f7f7f7;
-  font-size: 1.8rem;
-  border-top: 1px solid #353535;
 }
 
 .cd-primary-nav>ul a:hover, .cd-primary-nav>ul a.active {
@@ -186,12 +186,12 @@
     display: table-cell;
     vertical-align: middle;
     /* reset mobile style */
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
     position: relative;
     width: auto;
     top: 0;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
   }
 
   .cd-primary-nav>ul::after {
@@ -212,10 +212,10 @@
 
   .cd-primary-nav>ul a {
     /* reset mobile style */
+    border: none;
     height: auto;
     line-height: normal;
     padding: 0;
-    border: none;
   }
 }
 
@@ -240,37 +240,37 @@
 2. Auto-Hiding Navigation - with Sub Nav
 -------------------------------- */
 .cd-secondary-nav {
-  position: relative;
-  z-index: 1;
-  clear: both;
-  width: 100%;
-  height: 50px;
   background-color: #2b2b2b;
+  clear: both;
+  height: 50px;
+  position: relative;
+  width: 100%;
   /* Force Hardware Acceleration */
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  will-change: transform;
-  -webkit-transition: -webkit-transform .5s;
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  will-change: transform;
+  z-index: 1;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: -webkit-transform .5s;
 }
 
 .cd-secondary-nav::after {
   /* gradient on the right - to indicate it's possible to scroll */
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 35px;
   background: transparent;
   background: -webkit-linear-gradient(right, #f7f7f7, rgba(37, 40, 61, 0));
   background: linear-gradient(to left, #f7f7f7, rgba(37, 40, 61, 0));
+  content: '';
+  height: 100%;
   pointer-events: none;
-  -webkit-transition: opacity .2s;
+  position: absolute;
+  right: 0;
+  top: 0;
   transition: opacity .2s;
+  width: 35px;
+  z-index: 1;
+  -webkit-transition: opacity .2s;
 }
 
 .cd-secondary-nav.nav-end::after {
@@ -302,9 +302,9 @@
   display: inline-block;
   float: left;
   /* do not shrink - elements float on the right of the element */
+  flex-shrink: 0;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
 }
 
 .cd-secondary-nav li:last-of-type {
@@ -336,10 +336,10 @@
 
   .cd-secondary-nav li {
     /* reset mobile style */
+    flex-shrink: 1;
     float: none;
     -webkit-flex-shrink: 1;
     -ms-flex-negative: 1;
-    flex-shrink: 1;
   }
 
   .cd-secondary-nav a {
@@ -360,9 +360,9 @@
 }
 
 .cd-secondary-nav.slide-up {
+  transform: translateY(-60px);
   -webkit-transform: translateY(-60px);
   -ms-transform: translateY(-60px);
-  transform: translateY(-60px);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -373,9 +373,9 @@
   }
 
   .cd-secondary-nav.slide-up {
+    transform: translateY(-80px);
     -webkit-transform: translateY(-80px);
     -ms-transform: translateY(-80px);
-    transform: translateY(-80px);
   }
 }
 
@@ -416,10 +416,10 @@ Process
 */
 .cd-main-content.sub-nav :target::before,
 .cd-main-content.sub-nav-hero :target::before {
-  display: block;
   content: "";
-  margin-top: -50px;
+  display: block;
   height: 50px;
+  margin-top: -50px;
   visibility: hidden;
 }
 

@@ -105,6 +105,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  max-width: 98rem;
   padding-bottom: 7rem;
   text-transform: capitalize;
 }
@@ -118,15 +119,6 @@ h2 {
   text-transform: capitalize;
 }
 
-h3 {
-  font-family: droid-serif, serif;
-  font-size: 2.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  text-transform: capitalize;
-}
-
 h4 {
   font-family: lato, sans-serif;
   font-size: 2.2rem;
@@ -137,7 +129,7 @@ h4 {
 
 h5 {
   font-family: droid-serif, serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -165,7 +157,7 @@ nav ul li {
 .subtitle {
   font-family: lato, sans-serif;
   padding-bottom: 7rem;
-  max-width: 740px;
+  max-width: 74rem;
 }
 
 a {
@@ -179,88 +171,45 @@ a:hover {
 
 @media screen and (min-width: 40rem) {
   h1 {
-    font-family: droid-serif, serif;
     font-size: 5.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    padding-bottom: 7rem;
-    text-transform: capitalize;
   }
 
   h2 {
-    font-family: droid-serif, serif;
-    font-size: 4.8rem;
     font-weight: 700;
-    font-style: normal;
-    padding-bottom: 2.4rem;
-    text-transform: capitalize;
   }
 
-  h3 {
-    font-family: droid-serif, serif;
+  h5 {
     font-size: 4.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    text-transform: capitalize;
   }
 }
 
-/******Button*********/
-.button-style-1 {
-  background-image: linear-gradient(to right, #F77268, #FA255E);
-  border: 0px;
+/******Buttons*********/
+button {
   border-radius: 50px;
-  color: #fff;
-  font-family: roboto, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  height: 48px;
-  padding-left: 1.8rem;
-  padding-right: 1rem;
-  text-transform: uppercase;
-  transition: 0.5s;
-  width: auto;
-  white-space: nowrap;
-  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 1);
-}
-
-.button-style-2 {
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 50px;
-  color: #343434;
-  font-family: roboto, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  height: 48px;
-  padding-left: 1.8rem;
-  padding-right: 1rem;
-  text-transform: uppercase;
-  transition: 0.5s;
-  width: auto;
-  white-space: nowrap;
-  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  display: inline;
+  font-family: roboto, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  height: 48px;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-.button-arrow-1 {
-  height: auto;
-  vertical-align: middle;
+.button-style-1:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
-.button-arrow-2 {
-  padding: .2rem 0;
-  max-height: 26px;
-  margin-bottom: .3rem;
-  margin-right: .5rem;
-  vertical-align: middle;
+.button-style-2:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  text-align: center;
 }
 
 .button-text {
@@ -269,8 +218,75 @@ a:hover {
   padding-right: .5rem;
 }
 
-button:active {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+.button-style-1 {
+  background-image: linear-gradient(to right, #F77268, #FA255E);
+  border: 0px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display: inline-block;
+  font-family: roboto, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  height: 4.8rem;
+  margin-bottom: 2.4rem;
+  margin-right: 1.6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.8rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+}
+
+.button-arrow-1 {
+  width: 3.2rem;
+  height: auto;
+  vertical-align: middle;
+}
+
+.button-style-1:hover {
+  color: #fff;
+}
+
+.button-style-2 {
+  background-color: #fff;
+  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  color: #343434;
+  display: inline-block;
+  font-family: roboto, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  height: 4.8rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.8rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
+}
+
+.button-arrow-2 {
+  margin-bottom: .3rem;
+  margin-left: .5rem;
+  margin-right: 1.5rem;
+  max-height: 26px;
+  padding: .2rem 0;
+  vertical-align: middle;
+}
+
+.button-style-2:hover {
+  color: #343434;
 }
 
 /******Header*********/
@@ -413,13 +429,15 @@ button:active {
 
 .project1-summary {
   background-image: url("/images/components/01.png");
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .project-description {
   line-height: 140%;
+  max-width: 44rem;
+
 }
 
 .project1 {
@@ -427,22 +445,26 @@ button:active {
 }
 
 .project1-img {
-  padding-bottom: 2.4rem;
   align-items: center;
+  padding-bottom: 2.4rem;
   display: flex;
 }
 
 @media screen and (min-width: 1000px) {
   .project1 {
+    column-gap: 13rem;
+
     display: grid;
     padding: 10rem 0;
-    grid-template-columns: 4fr 4fr;
     grid-template-areas:
       "project1-img project1-summary";
-    column-gap: 13rem;
+    grid-template-columns: 4fr 4fr;
+
+
   }
 
   .project1-img {
+    min-width: 50rem;
     padding-bottom: 0;
   }
 }

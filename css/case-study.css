@@ -35,7 +35,11 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 55rem;
+    max-width: 60rem;
+  }
+
+  .preference-container {
+    max-width: 50rem;
   }
 }
 
@@ -64,7 +68,7 @@ p {
   font-family: lato, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
-  line-height: 180%;
+  line-height: 160%;
 }
 
 h1 {
@@ -98,7 +102,7 @@ h3 {
 
 h4 {
   font-family: droid-serif, serif;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -110,7 +114,7 @@ h5 {
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 180%;
+  line-height: 160%;
   text-transform: capitalize;
 }
 
@@ -118,7 +122,7 @@ h6 {
   font-family: lato, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
-  line-height: 180%;
+  line-height: 160%;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -145,7 +149,7 @@ li {
   font-family: lato, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
-  line-height: 180%;
+  line-height: 160%;
 }
 
 ol {
@@ -227,8 +231,9 @@ a:hover {
   font-style: italic;
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 140%;
   padding-bottom: 5.6rem;
-  padding-top: .8rem;
+  padding-top: .4rem;
   text-align: center;
 }
 
@@ -237,8 +242,9 @@ a:hover {
   font-size: 1.6rem;
   font-style: italic;
   font-weight: 400;
+  line-height: 140%;
   padding-bottom: 2.4rem;
-  padding-top: .8rem;
+  padding-top: .4rem;
   text-align: center;
 }
 
@@ -247,8 +253,8 @@ a:hover {
   font-style: italic;
   font-size: 1.6rem;
   font-weight: 400;
-  padding-top: .8rem;
-  text-align: center;
+  padding-top: .4rem;
+  text-align: left;
 }
 
 .preference-question {
@@ -258,17 +264,28 @@ a:hover {
   text-align: left;
 }
 
+.left-caption {
+  font-family: roboto, sans-serif;
+  font-style: italic;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 5.6rem;
+  padding-top: .4rem;
+  text-align: left;
+}
+
 @media screen and (min-width: 40rem) {
+  h1 {
+    font-size: 5.6rem;
+  }
+
   h2 {
     font-size: 4.8rem;
   }
 
-  .caption {
-    margin-left: 3rem;
-  }
-
-  .feedback-caption {
-    margin-left: 3rem;
+  h4 {
+    font-size: 4.8rem;
   }
 
   .preference-question {
@@ -293,7 +310,15 @@ button {
   -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
 }
 
-button:active {
+.button-style-1:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-style-2:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-style-3:active {
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -321,10 +346,10 @@ button:active {
   height: 48px;
   margin-bottom: 2.4rem;
   margin-right: 1.6rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   padding-left: 1.8rem;
   padding-right: 1rem;
-  padding-top: 1.5rem;
+  padding-top: 1.7rem;
   text-transform: uppercase;
   transition-duration: 0.5s;
   white-space: nowrap;
@@ -552,7 +577,7 @@ button:active {
 
 /******Problem and Solution*********/
 .problem-solution {
-  background-color: #f2f2f2;
+  background-color: #f4f5f7;
   padding-top: 7rem;
 }
 
@@ -727,23 +752,23 @@ button:active {
   position: absolute;
   text-align: center;
   text-shadow: 2px 8px 8px 2px rgba(0, 0, 0, 0.5);
-  top: 19rem;
+  top: 300px;
 }
 
 .persona-name {
   font-size: 4.8rem;
   font-weight: 700;
-  line-height: 6.4rem;
+  line-height: 100%;
   text-align: center;
 }
 
 .persona-role {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 120%;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  padding-top: 2.4rem;
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -817,13 +842,8 @@ button:active {
 
   .persona-text {
     margin: 0 10%;
-    top: 190px;
+    top: 240px;
     width: 80%;
-  }
-
-  .persona-name {
-    font-size: 5.8rem;
-    line-height: 5.8rem;
   }
 }
 
@@ -862,8 +882,8 @@ button:active {
     background-image: url("/images/ark-case-study/personas/persona3.jpg");
   }
 
-  .persona-name {
-    font-size: 4.8rem;
+  .persona-text {
+    top: 200px;
   }
 }
 
@@ -873,8 +893,6 @@ button:active {
   margin: 5.6rem 4vw;
   width: 87vw;
 }
-
-table {}
 
 @media screen and (min-width: 400px) {
   .table-container {
@@ -920,6 +938,7 @@ table {}
   background-color: #E2EDF6;
 }
 
+/******User Flow*********/
 /******Wireframes*********/
 #wireframe-flow {
   padding: 2.4rem;
@@ -946,6 +965,7 @@ table {}
   padding-top: 2.4rem;
   margin: 0 5%;
   width: 90%;
+  overflow-x: hidden;
 }
 
 .gallery-first-item {
@@ -1059,8 +1079,15 @@ table {}
     "logo-inline-img-1"
     "logo-inline-img-2";
   grid-template-columns: 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 5.6rem;
   text-align: center;
+}
+
+#logos-container {
+  margin: 0 5%;
+  width: 90%;
 }
 
 .logo-inline-img-1 {
@@ -1108,8 +1135,7 @@ table {}
       "logo-inline-img-1 logo-inline-img-2";
     grid-column-gap: 2.4rem;
     grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
     width: 80%;
   }
 }
@@ -1184,23 +1210,24 @@ table {}
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 5.6rem 5%;
-  max-width: 90%;
-  text-align: center;
+  margin: 5.6rem 10%;
   padding: 5%;
+  text-align: center;
   transition: 0.3s;
+  width: 80%;
 }
 
 @media screen and (min-width: 400px) {
   .preference-test {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 5.6rem 10%;
     max-width: 80%;
-    text-align: center;
-    padding: 5%;
-    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .preference-test {
+    max-width: 90rem;
+    margin: 5.6rem auto;
   }
 }
 
@@ -1231,12 +1258,13 @@ table {}
 
 .mobile-txt-field {
   width: 25rem;
-  height: 51.4rem;
   margin: auto;
+  text-align: center;
 }
 
 .desktop-txt-field {
   margin-top: 10rem;
+  margin: auto;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1249,9 +1277,13 @@ table {}
     margin-top: 5.6rem;
   }
 
-  .desktop-txt-field {
-    width: 85rem;
-    height: 51.4rem;
+  #mobile-img {
+    max-height: 40rem;
+    vertical-align: middle;
+  }
+
+  #dashboard-img {
+    max-height: 40rem;
   }
 
   .mobile-txt-field {
