@@ -1044,6 +1044,7 @@ a:hover {
   width: 90%;
   overflow-x: hidden;
 }
+
 @media screen and (min-width: 400px) {
   #gallery {
     align-items: center;
@@ -1057,6 +1058,15 @@ a:hover {
   .gallery-container {
     padding-top: 2.4rem;
     margin: 0 10%;
+    width: 80%;
+  }
+
+  .single-img-container {
+    padding-top: 2.4rem;
+    margin: 0 auto;
+    max-width: 80rem;
+    overflow-x: hidden;
+    text-align: center;
     width: 80%;
   }
 }
@@ -1080,7 +1090,7 @@ a:hover {
 }
 
 /******Branding Work*********/
-#brainstorm-imgs {
+.brainstorm-imgs {
   display: grid;
   grid-column-gap: 2.4rem;
   grid-template-areas:
@@ -1092,15 +1102,21 @@ a:hover {
   width: 90%;
 }
 
-#brainstorm-inline-img-1 {
+.brainstorm-inline-img-1 {
   display: inline-block;
+  margin: 0 5%;
+  max-width: 80rem;
+  width: 90%;
 }
 
-#brainstorm-inline-img-2 {
+.brainstorm-inline-img-2 {
   display: inline-block;
+  margin: 0 5%;
+  max-width: 80rem;
+  width: 90%;
 }
 
-#sketch-imgs {
+.sketch-imgs {
   display: grid;
   grid-column-gap: 2.4rem;
   grid-template-areas:
@@ -1108,23 +1124,55 @@ a:hover {
     "sketch-inline-img-2"
     "sketch-inline-img-3";
   grid-template-columns: 1fr;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5.6rem;
+  margin: 0 5%;
   text-align: center;
+  width: 90%;
+
+}
+
+@media screen and (min-width: 1000px) {
+  .brainstorm-imgs {
+    grid-template-areas:
+      "brainstorm-inline-img-1 brainstorm-inline-img-2";
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5.4rem;
+    width: 80%;
+  }
+
+  .sketch-imgs {
+    grid-template-areas:
+      "sketch-inline-img-1 sketch-inline-img-2 sketch-inline-img-3";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5.4rem;
+    width: 80%;
+  }
+
+
+}
+
+.sketch-inline-img-1 {
+  display: inline-block;
+  margin: 0 5%;
+  max-width: 80rem;
   width: 90%;
 }
 
-#sketch-inline-img-1 {
+.sketch-inline-img-2 {
   display: inline-block;
+  margin: 0 5%;
+  max-width: 80rem;
+  width: 90%;
 }
 
-#sketch-inline-img-2 {
+.sketch-inline-img-3 {
   display: inline-block;
-}
-
-#sketch-inline-img-3 {
-  display: inline-block;
+  margin: 0 5%;
+  max-width: 80rem;
+  width: 90%;
 }
 
 #moodboard-img {
@@ -1133,8 +1181,10 @@ a:hover {
 }
 
 .logo-container {
-  max-width: 45rem;
-  margin: 0 auto;
+  margin: 0 5%;
+  max-width: 80rem;
+  text-align: center;
+  width:90%;
 }
 
 .single-imgs {
@@ -1143,6 +1193,28 @@ a:hover {
   margin: 0 5%;
   max-width: 80rem;
   width: 90%;
+}
+
+@media screen and (min-width: 400px) {
+
+
+.logo-container {
+  margin: 0 10%;
+  max-width: 80rem;
+  text-align: center;
+  width:80%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+
+.logo-container {
+  margin: 0 auto;
+  max-width: 80rem;
+  text-align: center;
+  width:80%;
+}
 }
 
 @media screen and (min-width: 1000px) {
@@ -1181,15 +1253,18 @@ a:hover {
   text-align: center;
 }
 
-#color-scheme-container {
-  width: 90%;
+.color-scheme-container {
   margin: 0 5%;
+  max-width: 80rem;
+  text-align: center;
+  width: 90%;
+
 }
 
 @media screen and (min-width: 400px) {
-  #color-scheme-container {
-    width: 90%;
-    margin: 0 5%;
+  .color-scheme-container {
+    margin: 0 10%;
+    width: 80%;
   }
 
 
@@ -1208,25 +1283,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  #brainstorm-imgs {
-    grid-template-areas:
-      "brainstorm-inline-img-1 brainstorm-inline-img-2";
-    grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5.4rem;
-    width: 80%;
-  }
 
-  #sketch-imgs {
-    grid-template-areas:
-      "sketch-inline-img-1 sketch-inline-img-2 sketch-inline-img-3";
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-
-}
 
 /******Updates Made to the Framework*********/
 .framework {
@@ -1358,15 +1415,23 @@ a:hover {
   }
 }
 
+#mobile-txt-img {
+  max-height: 30rem;
+}
+
+#desktop-txt-img {
+  max-height: 30rem;
+}
+
 .mobile-txt-field {
-  width: 25rem;
-  margin: auto;
+  margin: 0 auto;
+  max-width: 25rem;
   text-align: center;
 }
 
 .desktop-txt-field {
-  margin-top: 10rem;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 1000px) {
@@ -1379,14 +1444,7 @@ a:hover {
     margin-top: 5.6rem;
   }
 
-  #mobile-img {
-    max-height: 40rem;
-    vertical-align: middle;
-  }
 
-  #dashboard-img {
-    max-height: 40rem;
-  }
 
   .mobile-txt-field {
     margin-right: 2.4rem;
@@ -1465,7 +1523,7 @@ a:hover {
 
 /******Conclusion*********/
 .conclusion {
-  background-color: #F2F2F2;
+  background-color: #f4f5f7;
   margin-top: 7rem;
   padding: 7rem 0;
 }
