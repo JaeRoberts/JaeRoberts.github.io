@@ -20,11 +20,16 @@ img {
   height: auto;
   max-width: 100%;
 }
+.footer div hr {
+  border: 1px solid #F77268;
+}
 
 .container {
   margin: 0 10%;
   width: 80%;
 }
+
+
 
 @media screen and (min-width: 40rem) {
   .container {
@@ -44,7 +49,7 @@ img {
 .cd-auto-hide-header {
   background-attachment: fixed;
   background-color: #f1f1f1;
-  background-image: url("./images/ark-case-study/case-study-bg.png");
+  background-image: url("/images/hero/case-study-bg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,6 +81,8 @@ img {
   color: #343434;
 }
 
+
+
 .link-period {
   color: #FA255E;
 }
@@ -85,8 +92,17 @@ img {
 }
 
 /******Typography*********/
+.pink {
+  color: #FA255E;
+}
+
 .bold-pink {
   color: #FA255E;
+  font-weight: 700;
+}
+
+b, strong {
+  font-weight: 700;
 }
 
 u {
@@ -106,7 +122,7 @@ h1 {
   font-weight: 400;
   line-height: 140%;
   max-width: 98rem;
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
   text-transform: capitalize;
 }
 
@@ -115,21 +131,15 @@ h2 {
   font-size: 2.8rem;
   font-weight: 700;
   font-style: normal;
-  padding-bottom: 2.4rem;
+  padding-bottom: 1rem;
   text-transform: capitalize;
 }
 
-h4 {
-  font-family: lato, sans-serif;
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-}
 
-h5 {
+
+h3 {
   font-family: droid-serif, serif;
-  font-size: 3.8rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -145,19 +155,29 @@ nav ul li {
   text-transform: lowercase;
 }
 
-.content-label {
+
+
+.tags {
+  color: #F77268;
   font-family: lato, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
-  padding-bottom: 4.8rem;
+  padding-bottom: 2rem;
   text-transform: uppercase;
 }
 
 .subtitle {
-  font-family: lato, sans-serif;
-  padding-bottom: 7rem;
+  padding-bottom: 6rem;
   max-width: 74rem;
+}
+
+.subtitle-text {
+  font-family: lato, sans-serif;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 a {
@@ -175,38 +195,15 @@ a:hover {
   }
 
   h2 {
-    font-weight: 700;
+    font-size: 4.8rem;
   }
 
-  h5 {
-    font-size: 4.8rem;
+  h3 {
+    font-size: 3.8rem;
   }
 }
 
 /******Buttons*********/
-button {
-  border-radius: 50px;
-  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  display: inline;
-  font-family: roboto, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  height: 48px;
-  text-transform: uppercase;
-  transition-duration: 0.5s;
-  white-space: nowrap;
-  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-}
-
-.button-style-1:active {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-}
-
-.button-style-2:active {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-}
 
 .button-container {
   text-align: center;
@@ -219,8 +216,9 @@ button {
 }
 
 .button-style-1 {
-  background-image: linear-gradient(to right, #F77268, #FA255E);
-  border: 0px;
+  background-image: linear-gradient(to right, #F77268 0%, #F94D63 25%, #FA255E 75%, #F77268 100%);
+  background-size: 200% auto;
+  border: none;
   border-radius: 50px;
   box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -230,8 +228,9 @@ button {
   font-style: normal;
   font-weight: 500;
   height: 4.8rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 0rem;
   margin-right: 1.6rem;
+  position: relative;
   padding-bottom: 1.5rem;
   padding-left: 1.8rem;
   padding-right: 1rem;
@@ -250,8 +249,20 @@ button {
 }
 
 .button-style-1:hover {
+  background-position: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
 }
+
+
+.button-style-1:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
 
 .button-style-2 {
   background-color: #fff;
@@ -287,13 +298,23 @@ button {
 
 .button-style-2:hover {
   color: #343434;
+  transition-duration: 0.5s;
+
 }
+
+.button-style-2:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /******Header*********/
 .cd-auto-hide-header {
   background-attachment: fixed;
   background-color: #f1f1f1;
-  background-image: url("/images/ark-case-study/case-study-bg.png");
+  background-image: url("/images/hero/case-study-bg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -346,7 +367,7 @@ button {
 }
 
 #current-page {
-  font-weight: 700;
+  color: #FA255E;
 }
 
 @media screen and (min-width: 36rem) {
@@ -406,28 +427,30 @@ button {
 
 .hero-banner1 {
   background-attachment: fixed;
-  background-image: url("/images/hero/hero-bg-light.png");
+  background-image: url("/images/hero/hero-bg-light.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /******Project*********/
-.featured-project {
+.featured-projects {
+
   font-family: lato, sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  padding-bottom: 2.4rem;
+  margin-bottom: 5rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .project-description {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
-.project1-summary {
+.project-summary {
   background-image: url("/images/components/01.png");
   background-position: center;
   background-size: contain;
@@ -438,32 +461,48 @@ button {
   line-height: 140%;
   max-width: 44rem;
 
+
 }
 
-.project1 {
+.projects {
   padding: 10rem 0;
 }
 
-.project1-img {
+.project-img {
   align-items: center;
-  padding-bottom: 2.4rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
+  margin-bottom: 3rem;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.54, -0.29, 0.54, 1.14);
+
+}
+
+.project-img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 400px) {
+
+  .tags {
+    font-size: 1.8rem;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
-  .project1 {
-    column-gap: 13rem;
-
+  .project {
+    column-gap: 5rem;
     display: grid;
-    padding: 10rem 0;
     grid-template-areas:
-      "project1-img project1-summary";
+      "project-img project-summary";
     grid-template-columns: 4fr 4fr;
-
-
+    max-width: 95rem;
+    margin:auto;
   }
 
-  .project1-img {
+  .project-img {
     min-width: 50rem;
     padding-bottom: 0;
   }
@@ -472,7 +511,7 @@ button {
 /******Footer*********/
 .footer {
   background-color: #2A2A2D;
-  color: #ffffff;
+  color: #E8E8E8;
   padding: 5rem 0;
 }
 
@@ -481,12 +520,12 @@ button {
   width: 80%;
 }
 
-footer div h5 {
+footer div h3 {
   padding-bottom: 2.4rem;
 }
 
 .footer-link {
-  color: #fff;
+  color: #E8E8E8;
   display: inline-block;
   font-family: roboto, sans-serif;
   font-size: 1.6rem;

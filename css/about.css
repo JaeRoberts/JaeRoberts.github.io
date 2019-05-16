@@ -17,6 +17,14 @@ body {
     "footer";
 }
 
+hr {
+  border: 1px solid #efefef;
+}
+
+.footer div hr {
+  border: 1px solid #F77268;
+}
+
 .container {
   margin: 0 10%;
   width: 80%;
@@ -88,7 +96,7 @@ h3 {
 
 h4 {
   font-family: droid-serif, serif;
-  font-size: 3.8rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
@@ -105,11 +113,12 @@ h5 {
 }
 
 h6 {
+  color: #F77268;
   font-family: lato, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   line-height: 180%;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -153,9 +162,7 @@ a:hover {
 
 .link {
   font-weight: 700;
-  text-decoration-color: #FA255E;
-  text-decoration-style: solid;
-  text-decoration: underline;
+  color: #FA255E;
 }
 
 .quote {
@@ -178,7 +185,6 @@ a:hover {
 }
 
 .list {
-  padding-bottom: 1.6rem;
   padding-right: 1.6rem;
   padding-top: 1.6rem;
 }
@@ -191,40 +197,19 @@ a:hover {
   padding-bottom: 0;
 }
 
+
+
 @media screen and (min-width: 40rem) {
   h1 {
     font-size: 5.6rem;
   }
 
   h4 {
-    font-size: 4.8rem;
+    font-size: 3.8rem;
   }
 }
 
 /******Buttons*********/
-button {
-  border-radius: 50px;
-  box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  display: inline;
-  font-family: roboto, sans-serif;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  height: 48px;
-  text-transform: uppercase;
-  transition-duration: 0.5s;
-  white-space: nowrap;
-  -moz-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
-}
-
-.button-style-1:active {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-}
-
-.button-style-2:active {
-  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
-}
 
 .button-container {
   text-align: center;
@@ -237,8 +222,9 @@ button {
 }
 
 .button-style-1 {
-  background-image: linear-gradient(to right, #F77268, #FA255E);
-  border: 0px;
+  background-image: linear-gradient(to right, #F77268 0%, #F94D63 25%, #FA255E 75%, #F77268 100%);
+  background-size: 200% auto;
+  border: none;
   border-radius: 50px;
   box-shadow: 0px 0px 14px -12px rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -248,8 +234,9 @@ button {
   font-style: normal;
   font-weight: 500;
   height: 4.8rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 0rem;
   margin-right: 1.6rem;
+  position: relative;
   padding-bottom: 1.5rem;
   padding-left: 1.8rem;
   padding-right: 1rem;
@@ -268,7 +255,18 @@ button {
 }
 
 .button-style-1:hover {
+  background-position: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.button-style-1:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button-style-2 {
@@ -306,6 +304,11 @@ button {
 .button-style-2:hover {
   color: #343434;
 }
+
+.button-style-2:active {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
 
 /******Header*********/
 .cd-auto-hide-header {
@@ -376,7 +379,7 @@ button {
 }
 
 #current-page {
-  font-weight: 700;
+  color: #FA255E;
 }
 
 @media screen and (min-width: 50rem) {
@@ -432,8 +435,8 @@ button {
   }
 }
 
-#blue-background {
-  background-color: #F2F3F4;
+.facts-background {
+  background-color: #F8ECEB;
   border-radius: 1.5rem;
   margin-bottom: 4.8rem;
   margin-left: 10%;
@@ -471,8 +474,8 @@ button {
 
 /******Footer*********/
 .footer {
-  color: #f7f7f7;
   background-color: #2A2A2D;
+  color: #E8E8E8;
   padding: 5rem 0;
 }
 
@@ -486,7 +489,7 @@ footer div h4 {
 }
 
 .footer-link {
-  color: #fff;
+  color: #E8E8E8;
   display: inline-block;
   font-family: roboto, sans-serif;
   font-size: 1.6rem;
