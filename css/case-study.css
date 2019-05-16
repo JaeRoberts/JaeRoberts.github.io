@@ -1134,6 +1134,7 @@ a:hover {
 
 .logo-container {
   max-width: 45rem;
+  margin: 0 auto;
 }
 
 .single-imgs {
@@ -1215,6 +1216,7 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5.4rem;
+    width: 80%;
   }
 
   #sketch-imgs {
