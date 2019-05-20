@@ -22,7 +22,7 @@ hr {
 }
 
 .footer div hr {
-  border: 1px solid #F77268;
+  border: 1px solid #F84D63;
 }
 
 .container {
@@ -159,7 +159,7 @@ em {
 }
 
 u {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 75%, #FFF500 65%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 90%, rgba(248, 77, 99, 0.50) 65%);
   border-bottom: none;
   text-decoration: none;
 }
@@ -189,12 +189,12 @@ a {
 }
 
 a:hover {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .link {
   font-weight: 700;
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .quote {
@@ -225,7 +225,7 @@ a:hover {
 }
 
 .process-label {
-  background-color: #FFF500;
+  background-color: rgba(248, 77, 99, 0.10) /*#FFF500*/;
   display: inline;
   font-family: lato, sans-serif;
   font-size: 1.8rem;
@@ -309,7 +309,7 @@ a:hover {
   background-color: #fff;
   border: 2px solid #F8ECEB;
   border-radius: 10px;
-  color: #F77268;
+  color: #F84D63;
   font-family: roboto, sans-serif;
   font-style: normal;
   font-size: 1.6rem;
@@ -325,7 +325,7 @@ a:hover {
   background-color: #fff;
   border: 2px solid #F8ECEB;
   border-radius: 10px;
-  color: #F77268;
+  color: #F84D63;
   font-family: roboto, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
@@ -368,7 +368,7 @@ a:hover {
 }
 
 .button-style-1 {
-  background-image: linear-gradient(to right, #F77268 0%, #F94D63 25%, #FA255E 75%, #F77268 100%);
+  background-image: linear-gradient(to right, #F84D63 0%, #F94D63 25%, #F77268 75%, #F77268 100%);
   background-size: 200% auto;
   border: none;
   border-radius: 50px;
@@ -439,7 +439,10 @@ a:hover {
 }
 
 .button-style-2:hover {
+  background-color: #f2f2f2;
+  border-color: #343434;
   color: #343434;
+  transition-duration: 0.5s;
 }
 
 .button-style-2:active {
@@ -589,11 +592,11 @@ a:hover {
 }
 
 .link-period {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .nav-links:hover {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 /******Hero*********/

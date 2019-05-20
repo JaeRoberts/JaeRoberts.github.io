@@ -22,7 +22,7 @@ hr {
 }
 
 .footer div hr {
-  border: 1px solid #F77268;
+  border: 1px solid #F84D63;
 }
 
 .container {
@@ -113,7 +113,7 @@ h5 {
 }
 
 h6 {
-  color: #F77268;
+  color: #F84D63;
   font-family: lato, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
@@ -157,12 +157,12 @@ a {
 }
 
 a:hover {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .link {
   font-weight: 700;
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .quote {
@@ -222,7 +222,7 @@ a:hover {
 }
 
 .button-style-1 {
-  background-image: linear-gradient(to right, #F77268 0%, #F94D63 25%, #FA255E 75%, #F77268 100%);
+  background-image: linear-gradient(to right, #F84D63 0%, #F94D63 25%, #F77268 75%, #F77268 100%);
   background-size: 200% auto;
   border: none;
   border-radius: 50px;
@@ -302,7 +302,10 @@ a:hover {
 }
 
 .button-style-2:hover {
+  background-color: #f2f2f2;
+  border-color: #343434;
   color: #343434;
+  transition-duration: 0.5s;
 }
 
 .button-style-2:active {
@@ -340,11 +343,11 @@ a:hover {
 }
 
 .link-period {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 .nav-links:hover {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 /******Hero*********/
@@ -379,7 +382,7 @@ a:hover {
 }
 
 #current-page {
-  color: #FA255E;
+  color: #F84D63;
 }
 
 @media screen and (min-width: 50rem) {
