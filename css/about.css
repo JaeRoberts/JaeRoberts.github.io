@@ -30,6 +30,41 @@ hr {
   width: 80%;
 }
 
+#scroll-btn {
+  background-color: #F84D63;
+  border: none;
+  border-radius: 200px;
+  bottom: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  transition-duration: 0.5s;
+  z-index: 99;
+  opacity: 1;
+  animation: fade 2s linear;
+}
+
+
+@keyframes fade {
+  0%,50% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+
+#scroll-btn:hover {
+  background-color: #F77268;
+  transition-duration: 0.5s;
+}
+
+#scroll-btn:active {
+  background-color: #F77268;
+}
+
+
 @media screen and (min-width: 40rem) {
   .container {
     font-weight: 400;
