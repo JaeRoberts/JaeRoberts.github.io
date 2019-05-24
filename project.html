@@ -16,6 +16,8 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="scroll-btn" title="Go to top"><img src="./images/components/arrow-white-up.png" alt="Go to top."></button>
+
   <header class="cd-auto-hide-header">
     <div class="logo"><a href="index.html"><img src="./images/hero/JR-Logo-Black.png" alt="Logo"></a></div>
 
@@ -1493,8 +1495,8 @@
             <p class="process-label">PROCESS &#62; ADDITIONAL TESTING</p>
             <br>
             <h3>Applying Feedback</h3>
-            <p class="feedback-types">Mentor Suggestion: Replace the hamburger button with the logo</p>
 
+            <p class="feedback-types">Mentor Suggestion: Replace the hamburger button with the logo</p>
             <p>In the original design, the hamburger button was used to toggle the sidebar navigation. The Ark wordtype was placed next to it for the user to recognize the platform they are using at a glance.
             </p>
             <br>
@@ -1834,6 +1836,7 @@
       <h4>Like What you see? Let's Discuss!</h4>
       <div>
         <a class="footer-link" href="https://www.linkedin.com/in/jordynroberts/" target="_blank">linkedin.</a>
+        <a class="footer-link" href="https://dribbble.com/JordynRoberts" target="_blank">dribble.</a>
         <a class="footer-link" href="https://github.com/JaeRoberts" target="_blank">github.</a>
         <a class="footer-link" href="mailto:jaeux.design@gmail.com" target="_blank">email.</a>
       </div>
@@ -1861,6 +1864,24 @@
 
     gtag('config', 'UA-139876774-1');
   </script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scroll-btn").style.display = "block";
+  } else {
+    document.getElementById("scroll-btn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 

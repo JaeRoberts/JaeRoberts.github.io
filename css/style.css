@@ -30,7 +30,6 @@ img {
 }
 
 
-
 @media screen and (min-width: 40rem) {
   .container {
     margin: 0 10%;
@@ -480,9 +479,9 @@ a {
 .project-description {
   line-height: 140%;
   max-width: 44rem;
-
-
 }
+
+
 
 .projects {
   padding: 10rem 0;
