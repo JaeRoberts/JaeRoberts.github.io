@@ -263,9 +263,7 @@ a:hover {
 }
 
 .process-label {
-  background-color: rgba(248, 77, 99, 0.10)
-    /*#FFF500*/
-  ;
+  background-color: rgba(248, 77, 99, 0.10);
   border-radius: 10px;
   display: inline;
   font-family: lato, sans-serif;
@@ -278,6 +276,8 @@ a:hover {
   text-align: left;
   text-transform: uppercase;
   width: 80%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .list {
