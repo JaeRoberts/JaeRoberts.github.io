@@ -270,9 +270,10 @@ a:hover {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
+  line-height: 3.5rem;
   margin-bottom: 2.4rem;
   margin-top: 6.4rem;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   text-align: left;
   text-transform: uppercase;
   width: 80%;
