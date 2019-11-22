@@ -460,17 +460,37 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.project2 {
+  column-gap: 5rem;
+  display: grid;
+  flex-direction: column-reverse;
+  grid-template-areas:
+    "project-mobile-img"
+    "project-summary";
+  grid-template-columns: 4fr;
+  padding-top: 10rem;
+  max-width: 95rem;
+  margin:auto;
 }
 
 .project-description {
   padding-bottom: 3rem;
 }
 
-.project-summary {
+.project-1-summary {
   background-image: url("/images/components/01.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.project-2-summary {
+  background-image: url("/images/components/02.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -497,8 +517,21 @@ a {
 
 }
 
+.project-mobile-img {
+  align-items: center;
+  display: flex;
+  margin-bottom: 3rem;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.54, -0.29, 0.54, 1.14);
+
+}
+
 .project-img:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.project-mobile-img:hover {
   transform: scale(1.1);
 }
 
@@ -511,21 +544,44 @@ a {
 }
 
 @media screen and (min-width: 1000px) {
-  .project {
+  .project1 {
     column-gap: 5rem;
     display: grid;
     grid-template-areas:
-      "project-img project-summary";
-    grid-template-columns: 4fr 4fr;
+      "project-img project-1-summary";
+      grid-template-columns: 5fr 3fr;
+    max-width: 95rem;
+    margin: auto;
+  }
+
+  .project2 {
+    column-gap: 5rem;
+    display: grid;
+    flex-direction: column-reverse;
+    grid-template-areas:
+      "project-mobile-img project-2-summary";
+    grid-template-columns: 5fr 3fr;
     max-width: 95rem;
     margin:auto;
   }
 
+  .project-1-summary {
+    padding-top: .6rem;
+  }
+
   .project-img {
-    min-width: 50rem;
+    min-width: 5rem;
     padding-bottom: 0;
   }
+
+  .project-mobile-img {
+    min-width: 50rem;
+    padding-bottom: 0;
+    align-self: flex-end;
+  }
 }
+
+
 
 /******Footer*********/
 .footer {
