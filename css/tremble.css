@@ -1304,57 +1304,59 @@ nav ul li:hover::before {
 }
 
 .color-1 {
-  display: inline-block;
   background-color: #31BF2C;
+  display: inline-block;
   height: 10rem;
   width: 10rem;
 }
 .color-2 {
+  background-color: #ffffff;
+  border-bottom: 2px solid #efefef;
+  border-top: 2px solid #efefef;
   display: inline-block;
-  background-color: #2b2b2b;
   height: 10rem;
   width: 10rem;
 }
 
 .color-3 {
+  background-color: #2b2b2b;
   display: inline-block;
-  background-color: #F21B1B;
   height: 10rem;
   width: 10rem;
 }
 
 .color-4 {
+  background-color: #F21B1B;
   display: inline-block;
-  background-color: #ffffff;
-  border: 2px solid #efefef;
   height: 10rem;
   width: 10rem;
 }
 
 .color-5 {
-  display: inline-block;
   background-color: #F21B1B;
+  display: inline-block;
   height: 10rem;
   width: 10rem;
 }
 .color-6 {
+  background-color: #ffffff;
+  border-bottom: 2px solid #efefef;
+  border-top: 2px solid #efefef;
   display: inline-block;
-  background-color: #041735;
   height: 10rem;
   width: 10rem;
 }
 
 .color-7 {
   display: inline-block;
-  background-color: #8ED943;
+  background-color: #041735;
   height: 10rem;
   width: 10rem;
 }
 
 .color-8 {
   display: inline-block;
-  background-color: #ffffff;
-  border: 2px solid #efefef;
+  background-color: #8ED943;
   height: 10rem;
   width: 10rem;
 }
